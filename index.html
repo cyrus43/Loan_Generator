@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loan Schedule Generator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Loan Schedule Generator</h1>
+    <form id="loanForm">
+        <label for="loanAmount">Loan Amount:</label>
+        <input type="number" id="loanAmount" required>
+        <br>
+
+        <label for="interestRate">Interest Rate (%):</label>
+        <input type="number" id="interestRate" required>
+        <br>
+
+        <label for="loanTerm">Loan Term (months):</label>
+        <input type="number" id="loanTerm" required>
+        <br>
+
+        <label for="startDate">Start Date:</label>
+        <input type="date" id="startDate" required>
+        <br>
+
+        <button type="button" onclick="generateSchedule()">Generate Schedule</button>
+    </form>
+
+    <div id="scheduleResult">
+        <!-- Generated schedule will be displayed here -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
